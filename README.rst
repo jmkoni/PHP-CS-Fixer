@@ -1971,7 +1971,7 @@ Choose from the list of available rules:
 * **variable_case**
 
   Enforce camel (or snake) case for variable names, following
-  configuration
+  configuration.
 
   Configuration options:
 
