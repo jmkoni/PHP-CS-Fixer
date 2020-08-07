@@ -1968,6 +1968,16 @@ Choose from the list of available rules:
 
   Unary operators should be placed adjacent to their operands.
 
+* **variable_case**
+
+  Enforce camel (or snake) case for variable names, following
+  configuration
+
+  Configuration options:
+
+  - ``case`` (``'camel_case'``, ``'snake_case'``): apply ``camel_case`` or ``snake_case`` to
+    variables; defaults to ``'camel_case'``
+
 * **visibility_required** [@PSR2, @Symfony, @PhpCsFixer, @PHP71Migration, @PHP73Migration]
 
   Visibility MUST be declared on all properties and methods; ``abstract``
