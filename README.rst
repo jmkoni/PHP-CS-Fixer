@@ -1681,11 +1681,6 @@ Choose from the list of available rules:
 
   *Risky rule: this rule is EXPERIMENTAL and [1] is not covered with backward compatibility promise. [2] ``@param`` annotation is mandatory for the fixer to make changes, signatures of methods without it (no docblock, inheritdocs) will not be fixed. [3] Manual actions are required if inherited signatures are not properly documented.*
 
-  Configuration options:
-
-  - ``scalar_types`` (``bool``): fix also scalar types; may have unexpected
-    behaviour due to PHP bad type coercion system; defaults to ``true``
-
 * **phpdoc_to_return_type**
 
   EXPERIMENTAL: Takes ``@return`` annotation of non-mixed types and adjusts
@@ -1972,6 +1967,18 @@ Choose from the list of available rules:
 * **unary_operator_spaces** [@Symfony, @PhpCsFixer]
 
   Unary operators should be placed adjacent to their operands.
+
+* **variable_case**
+
+  Enforce camel (or snake) case for variable names, following
+  configuration.
+
+  *Risky rule: risky because it cannot detect a change that will have an impact in other files.*
+
+  Configuration options:
+
+  - ``case`` (``'camel_case'``, ``'snake_case'``): apply ``camel_case`` or ``snake_case`` to
+    variables; defaults to ``'camel_case'``
 
 * **visibility_required** [@PSR2, @Symfony, @PhpCsFixer, @PHP71Migration, @PHP73Migration]
 
